@@ -1,7 +1,0 @@
-{
-    "DATABASE_USER": "postgres",
-    "DATABASE_HOST": "localhost",
-    "DATABASE_NAME": "mogong",
-    "DATABASE_PASSWORD": "1234",
-    "DATABASE_PORT": "5432"
-}
