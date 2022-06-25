@@ -3,6 +3,7 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
+  console.log("코드 수정 효준")
   res.send('Hello World!')
 })
 
