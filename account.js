@@ -46,4 +46,20 @@ router.post('/login', function(req, res) {
 	})
 });
 
+// 정보수정
+router.put('/modify', function(req, res) {
+	const queryText = `
+		UPDATE account SET password = '${req.body.password}'
+		WHERE password = '${req.body.pw}' AND email = '${req.body.email}'
+	`
+
+	pool.query(queryText)
+	.then((result)=>{
+		res.send('수정 성공')
+	})
+	.catch((error)=>{
+		res.send('수정 실패')
+	})
+});
+
 module.exports = router;
